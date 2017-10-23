@@ -1,0 +1,11 @@
+.vs/
+DepEd.InfoSys.Api/bin/
+DepEd.InfoSys.Api/obj/
+DepEd.InfoSys.AutoMapper/bin/
+DepEd.InfoSys.AutoMapper/obj/
+DepEd.InfoSys.Data/bin/
+DepEd.InfoSys.Data/obj/
+DepEd.InfoSys.Entities/bin/
+DepEd.InfoSys.Entities/obj/
+DepEd.InfoSys.Service/bin/
+DepEd.InfoSys.Service/obj/

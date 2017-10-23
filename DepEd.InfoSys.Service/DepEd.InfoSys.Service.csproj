@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DepEd.InfoSys.AutoMapper\DepEd.InfoSys.AutoMapper.csproj" />
+    <ProjectReference Include="..\DepEd.InfoSys.Data\DepEd.InfoSys.Data.csproj" />
+    <ProjectReference Include="..\DepEd.InfoSys.Entities\DepEd.InfoSys.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
