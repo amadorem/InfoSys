@@ -10,6 +10,7 @@ namespace DepEd.InfoSys.Data.Helpers
         {
             public const string Region = "Region";
             public const string Division = "Division";
+            public const string District = "District";
         }
     }
 }
