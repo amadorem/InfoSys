@@ -18,6 +18,8 @@ namespace DepEd.InfoSys.Data
 
         public DbSet<Division> Divisions { get; set; }
 
+        public DbSet<District> Districts { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Region>()
@@ -26,6 +28,10 @@ namespace DepEd.InfoSys.Data
 
             modelBuilder.Entity<Division>()
                 .ToTable(Constants.Tables.Division)
+                .HasKey(_ => _.Id);
+
+            modelBuilder.Entity<District>()
+                .ToTable(Constants.Tables.District)
                 .HasKey(_ => _.Id);
         }
     }

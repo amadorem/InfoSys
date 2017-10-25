@@ -41,6 +41,7 @@ namespace DepEd.InfoSys.Api
 
             services.AddScoped<IRegionService, RegionService>();
             services.AddScoped<IDivisionService, DivisionService>();
+            services.AddScoped<IDistrictService, DistrictService>();
 
             services.AddSwaggerGen(c =>
             {
@@ -65,9 +66,8 @@ namespace DepEd.InfoSys.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "DepEd Information System V1");
             });
 
-
-
             app.UseMvc();
+
         }
     }
 }

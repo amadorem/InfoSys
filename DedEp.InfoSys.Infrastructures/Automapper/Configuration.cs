@@ -14,6 +14,7 @@ namespace DedEp.InfoSys.Infrastructures.Automapper
             {
                 cfg.AddProfile(new RegionProfile());
                 cfg.AddProfile(new DivisionProfile());
+                cfg.AddProfile(new DistrictProfile());
             });
         }
 
