@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace DepEd.InfoSys.Entities.ViewModels.Region
+namespace DepEd.InfoSys.Entities.Entities
 {
-    public class RegionUpdateViewModel
+    public class Division : BaseEntity
     {
-        [Required]
         public int Id { get; set; }
 
-        [Required,
+        [Required, 
             MaxLength(50)]
         public string Name { get; set; }
     }

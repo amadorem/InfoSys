@@ -9,3 +9,7 @@ DepEd.InfoSys.Entities/bin/
 DepEd.InfoSys.Entities/obj/
 DepEd.InfoSys.Service/bin/
 DepEd.InfoSys.Service/obj/
+DedEp.InfoSys.Infrastructures/bin/Debug/netcoreapp2.0/DedEp.InfoSys.Infrastructures.deps.json
+DedEp.InfoSys.Infrastructures/bin/Debug/netcoreapp2.0/DedEp.InfoSys.Infrastructures.dll
+DedEp.InfoSys.Infrastructures/bin/
+DedEp.InfoSys.Infrastructures/obj/

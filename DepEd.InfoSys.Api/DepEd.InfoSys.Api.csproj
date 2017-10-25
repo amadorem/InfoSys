@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DepEd.InfoSys.AutoMapper\DepEd.InfoSys.AutoMapper.csproj" />
+    <ProjectReference Include="..\DedEp.InfoSys.Infrastructures\DedEp.InfoSys.Infrastructures.csproj" />
     <ProjectReference Include="..\DepEd.InfoSys.Entities\DepEd.InfoSys.Entities.csproj" />
     <ProjectReference Include="..\DepEd.InfoSys.Service\DepEd.InfoSys.Service.csproj" />
   </ItemGroup>

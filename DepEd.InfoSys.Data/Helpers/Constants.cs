@@ -9,6 +9,7 @@ namespace DepEd.InfoSys.Data.Helpers
         public static class Tables
         {
             public const string Region = "Region";
+            public const string Division = "Division";
         }
     }
 }

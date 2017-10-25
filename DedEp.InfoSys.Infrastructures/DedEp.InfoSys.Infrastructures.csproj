@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DedEp.InfoSys.Infrastructures\DedEp.InfoSys.Infrastructures.csproj" />
-    <ProjectReference Include="..\DepEd.InfoSys.Data\DepEd.InfoSys.Data.csproj" />
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DepEd.InfoSys.Entities\DepEd.InfoSys.Entities.csproj" />
   </ItemGroup>
 

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using DepEd.InfoSys.AutoMapper.Profiles;
+using DedEp.InfoSys.Infrastructures.Automapper.Profiles;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DepEd.InfoSys.AutoMapper
+namespace DedEp.InfoSys.Infrastructures.Automapper
 {
     public static class Configuration
     {

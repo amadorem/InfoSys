@@ -1,12 +1,12 @@
 ﻿using DepEd.InfoSys.Entities.ViewModels.Region;
 using DepEd.InfoSys.Service.Interfaces;
-using DepEd.InfoSys.AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DepEd.InfoSys.Entities.Models;
+using DedEp.InfoSys.Infrastructures.Automapper;
 
 namespace DepEd.InfoSys.Api.Controllers
 {
