@@ -12,9 +12,9 @@ namespace DepEd.InfoSys.Service.Interfaces
 
         IEnumerable<RegionModel> Get();
 
-        void Add(RegionModel regionModel);
+        void Add(RegionModel model);
 
-        void Update(RegionModel regionModel);
+        void Update(RegionModel model);
 
         void Delete(int id);
     }

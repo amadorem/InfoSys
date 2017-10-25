@@ -16,6 +16,7 @@ using DepEd.InfoSys.Service.Services;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using DepEd.InfoSys.Data;
+using Automapper = DedEp.InfoSys.Infrastructures.Automapper;
 
 namespace DepEd.InfoSys.Api
 {
@@ -35,10 +36,11 @@ namespace DepEd.InfoSys.Api
 
             services.AddDbContext<InfoSysDbContext>(options => options
                 .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=InfoSysDbContext;Trusted_Connection=True;"));
-
            
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
             services.AddScoped<IRegionService, RegionService>();
+            services.AddScoped<IDivisionService, DivisionService>();
 
             services.AddSwaggerGen(c =>
             {
@@ -54,7 +56,7 @@ namespace DepEd.InfoSys.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            AutoMapper.Configuration.Configure();
+            Automapper.Configuration.Configure();
 
             app.UseSwagger();
 

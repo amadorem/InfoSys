@@ -11,9 +11,10 @@ using System;
 namespace DepEd.InfoSys.Data.Migrations
 {
     [DbContext(typeof(InfoSysDbContext))]
-    partial class InfoSysDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171024045732_AddDivision")]
+    partial class AddDivision
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

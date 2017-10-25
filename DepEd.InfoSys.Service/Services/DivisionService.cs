@@ -2,29 +2,30 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using DepEd.InfoSys.Data.Interfaces;
-using System.Linq;
-using DepEd.InfoSys.Entities;
 using DepEd.InfoSys.Entities.Models;
+using DepEd.InfoSys.Entities.Entities;
+using DepEd.InfoSys.Data.Interfaces;
+using DepEd.InfoSys.Entities;
+using System.Linq;
 using DedEp.InfoSys.Infrastructures.Automapper;
 
 namespace DepEd.InfoSys.Service.Services
 {
-    public class RegionService : IRegionService
+    public class DivisionService : IDivisionService
     {
-        private readonly IRepository<Region> repository;
+        private readonly IRepository<Division> repository;
 
-        public RegionService(IRepository<Region> repository)
+        public DivisionService(IRepository<Division> repository)
         {
             this.repository = repository;
         }
 
-        public void Add(RegionModel model)
+        public void Add(DivisionModel model)
         {
             // TODO: Validation
 
             repository.Add(model
-                .Map<Region>());
+                .Map<Division>());
 
             repository.Save();
         }
@@ -38,28 +39,27 @@ namespace DepEd.InfoSys.Service.Services
             repository.Delete(model);
 
             repository.Save();
-
         }
 
-        public void Update(RegionModel model)
-        {
-            // TODO: Validation
-            repository.Update(model.Map<Region>());
-
-            repository.Save();
-        }
-
-        public RegionModel Get(int id)
+        public DivisionModel Get(int id)
         {
             return repository.Get(id)
-                .Map<RegionModel>();
+                .Map<DivisionModel>();
         }
 
-        public IEnumerable<RegionModel> Get()
+        public IEnumerable<DivisionModel> Get()
         {
             return repository.Get()
                 .AsEnumerable()
-                .Map<RegionModel>();
+                .Map<DivisionModel>();
+        }
+
+        public void Update(DivisionModel model)
+        {
+            // TODO: Validation
+            repository.Update(model.Map<Division>());
+
+            repository.Save();
         }
     }
 }
